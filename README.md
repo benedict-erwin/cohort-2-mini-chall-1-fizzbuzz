@@ -1,5 +1,5 @@
 # Cohort 2 - Mini Challenge #1
-###FizzBuzz
+### FizzBuzz
 
 1. Buatlah looping berkondisi dengan variable n sebagai penentu maksimal number loopingnya,
 2. Setiap looping dengan angka kelipatan 3 maka diganti dengan kata **Fizz**
