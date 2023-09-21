@@ -7,22 +7,23 @@ import (
 )
 
 func main() {
+	var num int
 	if len(os.Args) > 1 {
 		val := os.Args[1]
 		max, err := strconv.Atoi(val)
 		if err != nil {
 			fmt.Println("Input must be integer!")
 		}
-		fmt.Println("Using N =", max)
-		modOfThreeOrFive(max)
+		num = max
 	} else {
-		fmt.Println("Using N = 15")
-		modOfThreeOrFive(15)
+		num = 15
 	}
+	modOfThreeOrFive(num)
 }
 
 func modOfThreeOrFive(max int) {
-	fmt.Println("=====================")
+	fmt.Println("Using N =", max)
+	fmt.Println("==========")
 	for i := 1; i <= max; i++ {
 		if i%3 == 0 && i%5 == 0 {
 			fmt.Println("FizzBuzz")
@@ -34,5 +35,5 @@ func modOfThreeOrFive(max int) {
 			fmt.Println(i)
 		}
 	}
-	fmt.Println("=====================")
+	fmt.Println("==========")
 }
